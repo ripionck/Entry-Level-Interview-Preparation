@@ -1,0 +1,426 @@
+*) What is a class variable in OOP?
+----> A variable shared by all instances of a class
+
+Explanation:
+A class variable is a variable that is declared within a class but outside of any class methods. It is shared by all instances (objects) of that class. This means that any modification made to the class variable will be reflected across all instances of the class. It is often used to store data that is common to all objects of that class.
+
+*) Can objects of abstract classes be instantiated?
+---->No
+
+Explanation:
+Abstract classes are designed to be incomplete and serve as blueprints for other classes to inherit from. They may contain abstract methods which are declared but not implemented.
+
+*) Which OOP principle is associated with the ability of a class to have multiple methods with the same name but different parameters?
+---->Polymorphism
+
+Explanation:
+Polymorphism allows objects of different classes to be treated as objects of a common superclass. This principle enables methods to be defined with the same name but different parameters within a class hierarchy. When a method is called on an object, the appropriate version of the method is invoked based on the type of the object at runtime, allowing for flexibility and code reusability.
+
+What is the primary purpose of encapsulation in OOP?
+---->Grouping data and methods that operate on the data into a single unit
+
+Explanation:
+Encapsulation involves bundling the data (attributes) and methods (functions) that operate on the data into a single unit, called a class. This unit serves as a protective wrapper that prevents the direct access of data from outside the class's scope, and it provides controlled access to the data through methods. Encapsulation helps to hide the internal state of an object and only expose the necessary functionalities, thus promoting data security, modularity, and maintainability of the code. While encapsulation indirectly supports code reusability and facilitates other OOP principles like inheritance and polymorphism, its primary objective is to encapsulate the implementation details and protect the integrity of the data within an object.
+
+*) In SQL, which statement is used to change the data type of an existing column in a table?
+---->MODIFY COLUMN TYPE
+
+Explanation:
+The ALTER TABLE statement is used to modify the structure of an existing table. When modifying a column's data type, the syntax typically involves using MODIFY COLUMN followed by the new data type. For example:
+--------------------------------------------
+ALTER TABLE table_name
+MODIFY COLUMN column_name new_data_type;
+--------------------------------------------
+*) Constructors are used to:
+---->Initialize a newly created object.
+
+Explanation:
+Constructors are special methods in object-oriented programming that are automatically called when a new instance (object) of a class is created. Their primary purpose is to initialize the newly created object, typically by assigning initial values to the object's attributes or performing any necessary setup tasks. This initialization process ensures that the object starts in a valid state and is ready for use. While constructors can perform various tasks related to object initialization, their main responsibility is to ensure the proper initialization of objects.
+
+*) The term that relates to Runtime Polymorphism:
+---->Method Overriding
+
+Explanation:
+Runtime polymorphism, also known as dynamic polymorphism, occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. This allows a subclass object to be treated as an object of its superclass but execute the overridden method specific to the subclass at runtime. Method overriding enables the selection of the appropriate method implementation based on the actual type of the object, which is determined at runtime. This dynamic method dispatch is a key feature of runtime polymorphism.
+
+*) What is the output of the following SQL query?
+SELECT COALESCE(NULL, 'Ratin', NULL, 'Phitron');
+---->'Ratin'
+
+Explanation:
+The COALESCE function returns the first non-null expression among its arguments. In this case, 'Ratin' is the first non-null value encountered in the list of arguments ('Ratin', NULL, NULL, 'Phitron'). Therefore, 'Ratin' will be returned as the output of the query.
+
+*) What is the difference between composition and inheritance in OOP?
+---->Composition is a way to achieve code reuse by combining objects, while inheritance is an "is-a" relationship between classes.
+
+Explanation:
+Composition: Composition involves creating complex objects by combining simpler objects. It establishes a "has-a" relationship between classes, where one class contains an instance of another class as a member. Through composition, a class can utilize the functionalities provided by other classes by incorporating objects of those classes as attributes. Composition promotes code reuse by allowing classes to collaborate and delegate tasks to other classes, leading to better modularity and flexibility in design.
+
+Inheritance: Inheritance establishes an "is-a" relationship between classes, where a subclass inherits properties and behaviors from a superclass. It allows a class (subclass) to inherit attributes and methods from another class (superclass), thus enabling code reuse and promoting the hierarchical organization of classes. Subclasses can extend the functionality of their superclass by adding new features or overriding existing ones. Inheritance facilitates polymorphism and supports the concept of specialization and generalization in class hierarchies.
+
+*) What is the purpose of the "this" keyword in object-oriented programming?
+---->Reference the current object instance
+
+Explanation:
+In object-oriented programming, "this" is a keyword that refers to the current instance of the class. It is used within the class to access the current object's attributes and methods. "this" is particularly useful in situations where there is a need to disambiguate between instance variables and local variables or parameters with the same name. By using "this", you can explicitly specify that you are referring to the instance variable of the current object.
+
+*) Which of the following SQL queries can be used to delete all records from the "products" table?
+---->DELETE FROM products;
+
+Explanation:
+The DELETE FROM statement in SQL is used to remove records from a table.
+When you execute DELETE FROM products;, it will delete all records from the "products" table.
+The other options are not valid for deleting all records from a table:
+DELETE * FROM products; is incorrect syntax. The asterisk (*) is not used with the DELETE statement.
+DELETE ALL FROM products; is not valid syntax for deleting all records. The correct syntax is DELETE FROM.
+TRUNCATE TABLE products; would also delete all records from the table, but it is a different operation compared to DELETE FROM. TRUNCATE removes all rows from a table in a way that is faster and less resource-intensive than DELETE. However, TRUNCATE does not fire any triggers associated with the table, and it cannot be rolled back.
+
+*) Which SQL statement is used to update data in a database?
+---->UPDATE
+
+Explanation:
+The UPDATE statement in SQL is used to modify existing records in a table.
+It allows you to change the values of one or more columns in one or more rows of a table based on specified conditions.
+The syntax typically involves specifying the table name, the columns to be updated, the new values, and any conditions that must be met for the update to occur.
+For example:
+-------------------------------------------------------
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+-------------------------------------------------------
+This statement updates the specified columns with new values in the rows that meet the specified condition.
+Options like MODIFY, ALTER, and CHANGE are used for altering the structure of a table, not for updating data.
+
+*) In OOP, what is the term for creating a new class that inherits from more than one class?
+---->Multiple inheritance
+
+Explanation:
+Multiple inheritance refers to the ability of a class to inherit attributes and methods from more than one parent class.
+In languages that support multiple inheritance, a subclass can inherit from multiple parent classes, allowing it to access and reuse features from each parent class.
+This feature enables a higher level of code reuse and flexibility in class design but can also introduce complexities and ambiguities, such as the diamond problem.
+Not all programming languages support multiple inheritance. Some languages, like Java, only support single inheritance (where a class can have only one direct superclass), while others, like C++, allow multiple inheritance.
+
+*) What does the term "abstraction" mean in the context of OOP?
+---->Hiding the implementation details and showing only the essential features
+
+Explanation:
+Abstraction is one of the fundamental principles of OOP, which involves emphasizing essential characteristics while hiding unnecessary details.
+It allows programmers to focus on the high-level design of classes and objects without worrying about the internal complexities of their implementation.
+By defining clear interfaces and abstracting away implementation details, abstraction helps to manage complexity, improve code maintainability, and facilitate code reuse.
+Through abstraction, classes provide a simplified view of the underlying system, exposing only the necessary functionalities and behaviors to interact with them, while hiding the implementation details from users of the class.
+
+*) How does inheritance contribute to code reuse and modularity in object-oriented programming?
+---->By creating a new class that inherits properties and behaviors from an existing class
+
+Explanation:
+Inheritance allows a new class (subclass) to inherit attributes and methods from an existing class (superclass).
+This means that the subclass automatically gains access to all the public and protected members of the superclass, including variables, methods, and behaviors.
+By reusing the existing class's functionality, developers can avoid duplicating code and leverage the work already done in the superclass.
+Inheritance promotes modularity by organizing code into hierarchical structures, where related classes can be grouped together based on their common characteristics.
+Changes made to the superclass are automatically reflected in all subclasses, ensuring consistency and reducing the effort required to maintain the codebase.
+Overall, inheritance facilitates code reuse, promotes modular design, and enhances the maintainability and scalability of object-oriented systems.
+
+*) An object that has more than one form is referred to as:
+---->Polymorphism
+
+Explanation:
+Polymorphism is a core concept in object-oriented programming that refers to the ability of objects to take on multiple forms.
+It allows objects of different classes to be treated as objects of a common superclass, enabling code to be written in a more general way that can operate on objects of various types.
+Polymorphism enables flexibility and extensibility in software design by allowing methods to be defined with the same name but different behaviors in different classes, based on their specific implementations.
+This concept promotes code reuse, modularity, and adaptability in object-oriented systems.
+
+*) What SQL statement is used to make sure that changes to one table are automatically made in another table?
+---->CASCADE
+
+Explanation:
+CASCADE is a keyword used in the context of foreign key constraints in SQL.
+When you define a foreign key constraint with CASCADE option, it means that changes to the referenced (parent) table will automatically propagate to the referencing (child) table.
+For example, if a record in the referenced table is deleted or updated, CASCADE will cause the corresponding records in the referencing table to be automatically deleted or updated as well.
+This ensures referential integrity and maintains the consistency of data between related tables in the database.
+It's important to use CASCADE with caution, as it can lead to unintended consequences if not used properly.
+
+*) In OOP, what is polymorphism primarily concerned with?
+---->Multiple forms of behavior
+
+Explanation:
+Polymorphism allows objects of different classes to be treated as objects of a common superclass.
+It enables methods to be defined with the same name but different behaviors in different classes, based on their specific implementations.
+Polymorphism allows for code to be written in a more general way, where the same method call can produce different behaviors depending on the type of object it is invoked on.
+This concept promotes flexibility, extensibility, and adaptability in software design by enabling dynamic method dispatch, where the appropriate method implementation is selected at runtime based on the actual type of the object.
+While polymorphism indirectly supports code reusability by allowing methods to be shared among related classes, its primary focus is on providing multiple forms of behavior for objects within a class hierarchy.
+
+*) Which of the following SQL queries will return the second highest salary from the employees table?
+---->SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);
+
+Explanation:
+This query first selects the maximum salary from the employees table using the subquery (SELECT MAX(salary) FROM employees).
+It then selects the maximum salary from the employees table again but restricts the selection to salaries that are less than the maximum salary obtained in the subquery using the WHERE clause WHERE salary < (SELECT MAX(salary) FROM employees).
+By doing so, it effectively filters out the highest salary, leaving the second highest salary as the maximum value selected by the outer query.
+
+*) Which SQL function is used to convert a value from one data type to another?
+---->CAST()
+
+Explanation:
+The CAST() function in SQL is used to convert a value from one data type to another.
+It allows you to explicitly specify the target data type for the conversion.
+The syntax typically involves specifying the value to be converted followed by the keyword CAST and the desired data type.
+For example: CAST(column_name AS new_data_type)
+The CONVERT() function is also used for data type conversion in some database systems, but it may not be supported universally across all SQL implementations.
+CHANGE() and TRANSFORM() are not standard SQL functions for data type conversion.
+
+*) What will the following SQL query do?
+---------------------------------------------------------------------------------------
+SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM employees;
+---------------------------------------------------------------------------------------
+---->Concatenate the first and last names of all employees and display the result in a new column named 'full_name'.
+
+Explanation:
+The CONCAT() function in SQL is used to concatenate strings.
+In this query, it concatenates the values of the 'first_name' column, a space (' '), and the values of the 'last_name' column for each row in the 'employees' table.
+The result is displayed as a new column named 'full_name', as specified by the AS keyword in the query.
+Therefore, the query selects the full name of all employees by combining their first and last names.
+
+*) What is the purpose of the "constructor" in OOP?
+----->Initializing class attributes
+
+Explanation:
+A constructor is a special method in a class that is automatically called when a new instance (object) of the class is created.
+Its primary purpose is to initialize the newly created object, typically by assigning initial values to the object's attributes or performing any necessary setup tasks.
+Constructors ensure that objects start in a valid state and are properly initialized before they are used.
+By defining constructors, developers can encapsulate the initialization logic within the class, promoting code reuse and simplifying object creation.
+Constructors play a crucial role in the object instantiation process, ensuring that objects are ready for use with their attributes properly set up.
+
+*) An object that has more than one form is referred to as:
+---->Polymorphism
+
+Explanation:
+Polymorphism is a core concept in object-oriented programming (OOP).
+It refers to the ability of objects to take on multiple forms, meaning that an object can be treated as an instance of its own class or as an instance of its superclass or interface.
+Polymorphism allows methods to behave differently based on the object they are invoked on, promoting flexibility and code reuse.
+It enables a single method name to represent different behaviors in different contexts, enhancing the adaptability and extensibility of OOP systems.
+
+*) In SQL, which JOIN returns all rows from both tables, joining records only when the condition is met?
+---->Full Join
+
+Explanation:
+
+A Full Join, also known as a Full Outer Join, returns all rows from both tables, joining records where the condition is met and including rows where there is no match.
+If there is no match for a row from one table in the other table, the missing values are filled with NULLs.
+Full Join combines the results of both Left Outer Join and Right Outer Join, ensuring that all rows from both tables are included in the result set.
+This type of join is useful when you want to include all records from both tables, regardless of whether they have matching rows in the other table.
+
+*) What SQL command is used to add a new column to an existing table?
+---->ALTER TABLE
+
+Explanation:
+The ALTER TABLE statement in SQL is used to modify the structure of an existing table.
+When adding a new column to a table, the specific syntax involves using the ADD COLUMN clause within the ALTER TABLE statement.
+For example:
+--------------------------------------------------
+ALTER TABLE table_name
+ADD COLUMN new_column_name data_type;
+--------------------------------------------------
+
+*) What is the fundamental concept behind encapsulation in object-oriented programming?
+---->Combining data and methods into a single unit
+
+Explanation:
+Encapsulation is the bundling of data (attributes) and methods (functions) that operate on the data into a single unit, called a class.
+It hides the internal state of an object from the outside world and only exposes the necessary functionalities through well-defined interfaces (public methods).
+By encapsulating data and methods together, encapsulation promotes data hiding, which prevents direct access to the object's internal state and ensures that it can only be accessed and modified through controlled access points (methods).
+Encapsulation helps in achieving data abstraction, where the internal details of how data is represented and manipulated are hidden, allowing for simpler and more modular code design.
+This concept enhances code maintainability, reusability, and scalability by providing a clear separation of concerns and reducing dependencies between different parts of the codebase.
+
+*) Discuss the importance of the "constructor" method in a class and its role in object initialization.
+---->The constructor initializes class attributes and is called automatically when an object is created.
+
+Explanation:
+The constructor method is a special method in a class that is automatically called when a new instance (object) of the class is created.
+Its primary purpose is to initialize the newly created object by assigning initial values to the object's attributes or performing any necessary setup tasks.
+The constructor ensures that objects start in a valid state and are properly initialized before they are used.
+By defining constructors, developers can encapsulate the initialization logic within the class, promoting code reuse and simplifying object creation.
+Constructors are critical for ensuring the correct behavior of objects and are invoked implicitly whenever an object is instantiated using the class's constructor syntax.
+While the constructor is optional in some programming languages, omitting it may lead to uninitialized objects or objects in an inconsistent state, which can cause errors and unexpected behavior in the program. Therefore, it is a best practice to define constructors in classes to ensure proper object initialization and maintain code reliability.
+
+*) The term that relates to compile-time polymorphism:
+---->Static typing
+
+Explanation:
+Compile-time polymorphism, also known as static polymorphism, refers to the mechanism where the appropriate method or function to be called is determined by the compiler at compile time.
+Static typing is a feature of programming languages where the data types of variables are checked at compile time.
+In statically typed languages, the compiler can determine which method or function to call based on the data types of arguments and the declared types of variables at compile time.
+This allows the compiler to perform type checking and method resolution during the compilation process, resulting in faster execution and early detection of type-related errors.
+Examples of statically typed languages include Java, C++, and Swift.
+Late binding and dynamic binding are associated with runtime polymorphism, where method resolution occurs at runtime, not at compile time.
+
+*) Which SQL query will retrieve the total number of orders for each customer, sorted by the customer's name?
+---->SELECT customer_name, COUNT(order_id) FROM orders GROUP BY customer_name ORDER BY customer_name;
+
+Explanation:
+This query selects the customer_name column and counts the number of order_id entries for each customer from the orders table.
+It groups the results by the customer_name using the GROUP BY clause.
+The COUNT() function is used to count the number of orders for each customer.
+Finally, the results are sorted by the customer_name in ascending order using the ORDER BY clause.
+This query correctly retrieves the total number of orders for each customer and sorts the results alphabetically by the customer's name.
+
+*) Which OOP concept promotes the idea of "programming to an interface, not an implementation"?
+---->Abstraction
+
+Explanation:
+Abstraction is the process of hiding the complex implementation details and exposing only the essential features of an object.
+When programming to an interface, not an implementation, the focus is on designing code to interact with objects through their abstract interfaces rather than their concrete implementations.
+This approach allows for more flexible and modular code, as it decouples the code from specific implementations and promotes loose coupling between different components.
+By relying on abstractions (such as interfaces or abstract classes), developers can write code that is more maintainable, extensible, and adaptable to changes in requirements or implementations.
+While polymorphism, inheritance, and encapsulation are fundamental OOP concepts, abstraction specifically emphasizes the importance of designing code based on abstract interfaces to achieve flexibility and maintainability.
+
+*) Explain the concept of polymorphism in object-oriented programming and provide an example.
+
+Explanation:
+Polymorphism in object-oriented programming (OOP) refers to the ability of objects of different classes to be treated as objects of a common base class. This means that a single interface can represent multiple underlying data types or forms. Polymorphism allows for more flexible and reusable code, as it enables a single method name to represent different behaviors in different contexts.
+
+Example:
+---------------------------------------------------------------------------------------
+class Animal:
+    def make_sound(self):
+        pass
+
+class Dog(Animal):
+    def make_sound(self):
+        print("Woof!")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Meow!")
+
+def animal_sound(animal):
+    animal.make_sound()
+
+
+dog = Dog()
+cat = Cat()
+
+animal_sound(dog)  # Output: Woof!
+animal_sound(cat)  # Output: Meow!
+---------------------------------------------------------------------------------------
+In this example, we have a base class Animal with a method make_sound(). We then have two derived classes, Dog and Cat, both of which override the make_sound() method with their own implementation. The animal_sound() function takes an Animal object as a parameter and calls its make_sound() method. Despite the function being called with objects of different classes (Dog and Cat), polymorphism allows the appropriate version of the make_sound() method to be called based on the actual type of the object at runtime.
+
+*) What SQL statement is used to change the name of a table?
+---->RENAME
+
+Explanation:
+The RENAME statement in SQL is used to change the name of a table.
+It allows you to rename an existing table to a new name.
+The syntax for renaming a table typically involves using the RENAME TO clause followed by the new name for the table.
+For example:
+---------------------------------------------------------------------------------
+RENAME old_table_name TO new_table_name;
+---------------------------------------------------------------------------------
+
+*) The term that relates to polymorphism:
+---->Dynamic allocation
+
+Explanation:
+Dynamic allocation refers to the process of allocating memory for variables or objects at runtime.
+Polymorphism, particularly runtime polymorphism, often involves dynamic allocation because the actual type of the object and its associated behavior are determined at runtime.
+Dynamic allocation enables objects of different classes to be treated uniformly through a common interface, allowing for flexible and adaptable code.
+Polymorphism allows methods to behave differently based on the object they are invoked on, and dynamic allocation plays a crucial role in enabling this behavior at runtime.
+
+*) What SQL statement is used to remove all rows from a table without deleting the table itself?
+---->TRUNCATE TABLE
+
+Explanation:
+The TRUNCATE TABLE statement in SQL is used to delete all rows from a table.
+Unlike the DELETE statement, which removes rows one by one and can be rolled back, TRUNCATE TABLE is a faster operation that removes all rows at once and cannot be rolled back.
+TRUNCATE TABLE resets the table's auto-increment values (if any) and releases the storage space occupied by the removed rows.
+However, TRUNCATE TABLE does not delete the table structure itself; it only removes the rows, leaving the table schema intact.
+This statement is commonly used when you need to quickly delete all data from a table, especially when you don't need to worry about rolling back the operation or maintaining referential integrity constraints.
+
+*) In SQL, which statement is used to remove duplicates from the result set?
+---->DISTINCT
+
+Explanation:
+The DISTINCT keyword in SQL is used to eliminate duplicate rows from the result set of a query.
+When you use the DISTINCT keyword in a SELECT statement, it instructs the database to return only unique rows, removing any duplicate rows.
+The DISTINCT keyword considers the values in all columns specified in the SELECT statement and returns only distinct combinations of those values.
+This is commonly used when you want to retrieve unique values from a column or unique combinations of values across multiple columns in the result set.
+
+*) Which SQL clause is used to combine rows from two or more tables, based on a related column between them?
+---->JOIN
+
+Explanation:
+The JOIN clause in SQL is used to combine rows from two or more tables based on a related column between them.
+It allows you to retrieve data from multiple tables simultaneously by specifying how the tables are related and how their rows should be matched.
+Different types of JOINs include INNER JOIN, LEFT JOIN (or LEFT OUTER JOIN), RIGHT JOIN (or RIGHT OUTER JOIN), and FULL JOIN (or FULL OUTER JOIN), each determining how rows from the tables are combined based on the specified condition.
+JOINs are essential for querying relational databases and retrieving data that is distributed across multiple tables based on their relationships.
+
+*) In SQL, which operator is used to test if a value is within a range?
+---->BETWEEN
+
+Explanation:
+The BETWEEN operator in SQL is used to test if a value lies within a specified range of values.
+It is commonly used in the WHERE clause of a SELECT statement to filter rows based on a range of values.
+The syntax for using the BETWEEN operator is typically as follows: value BETWEEN low AND high.
+The BETWEEN operator includes both the low and high boundary values in the range.
+For example, value BETWEEN 10 AND 20 would return true for any value that falls within the range from 10 to 20, inclusive.
+
+*) Which of the following SQL queries will list all customers who have not placed any orders?
+---->SELECT * FROM customers WHERE customer_id NOT IN (SELECT customer_id FROM orders);
+
+Explanation:
+This query selects all customers from the "customers" table where the customer_id is not found in the subquery result.
+The subquery (SELECT customer_id FROM orders) retrieves all unique customer IDs from the "orders" table.
+Using the NOT IN operator ensures that only customers who do not have a corresponding entry in the "orders" table are selected.
+This query effectively identifies customers who have not placed any orders.
+
+*) Which SQL function is used to find the number of rows in a table?
+---->COUNT
+
+Explanation:
+The COUNT function in SQL is used to return the number of rows that match a specified condition.
+When used without any condition (i.e., COUNT(*)), it returns the total number of rows in a table.
+Alternatively, you can use COUNT(column_name) to count the number of non-null values in a specific column.
+COUNT is commonly used to obtain aggregate information about the data in a table, including row counts.
+It's important to note that COUNT function counts rows that meet the specified condition and does not count NULL values by default.
+Other options listed (NUM_ROWS, TOTAL_ROWS, ROW_COUNT) are not standard SQL functions for counting rows in a table.
+
+*) Define the term "abstraction" in the context of object-oriented programming.
+---->Abstraction involves hiding the implementation details and exposing only the essential features.
+
+Explanation:
+Abstraction is one of the fundamental principles of object-oriented programming (OOP).
+It involves hiding the complex internal implementation details of an object and exposing only the essential features or functionalities that are relevant to the outside world.
+By abstracting away unnecessary details, abstraction allows developers to focus on the high-level design of classes and objects without being concerned about the inner workings.
+Abstraction helps in managing complexity, improving code maintainability, and enhancing code readability by providing a simplified and understandable view of objects and their interactions.
+Through abstraction, classes provide clear interfaces that define how objects can be interacted with, while hiding the complexities of their implementation behind these interfaces.
+This separation of interface and implementation enables modular design, promotes code reuse, and facilitates changes to the underlying implementation without affecting the code that uses the abstraction.
+
+*) In SQL, which function is used to return the current system date and time?
+---->SYSDATE()
+
+Explanation:
+SYSDATE() is a standard SQL function used to retrieve the current system date and time from the database server.
+It returns the date and time in the format specified by the database system, typically as a timestamp or datetime value.
+This function is commonly used in SQL queries to retrieve the current date and time for various purposes, such as recording timestamps for data modifications, generating reports, or performing date-based calculations.
+NOW(), CURRENT_DATE_TIME(), and GET_DATE_TIME() are not standard SQL functions for retrieving the current system date and time. SYSDATE() is the correct function for this purpose.
+
+*) What is the main purpose of the "super" keyword in Python when working with inheritance?
+---->Calls the constructor of the parent class
+
+Explanation:
+The "super" keyword in Python is used to call the methods (including the constructor) of the parent class from within the child class.
+It allows the child class to access and invoke methods or constructors defined in its parent class.
+When used in the context of constructors, "super" is typically used to initialize attributes or perform common setup tasks defined in the parent class before customizing behavior in the child class.
+By calling the parent class's constructor using "super", you ensure that the initialization logic defined in the parent class is executed before the child class's initialization code.
+This promotes code reuse and ensures that the inheritance hierarchy is properly maintained, as the parent class's initialization logic is executed seamlessly alongside the child class's customization.
+The "super" keyword does not refer to the child class itself, create a new instance of the class, or define a superclass; its primary purpose is to facilitate calling methods from the parent class in the context of inheritance.
+
+*) Which OOP principle is violated when a subclass modifies the behavior of its superclass methods?
+---->Encapsulation
+
+Explanation:
+Encapsulation is one of the fundamental principles of OOP, which involves bundling the data (attributes) and methods (behaviors) that operate on the data into a single unit, called a class.
+The principle of encapsulation states that the internal implementation details of a class should be hidden from the outside world, and access to the class's attributes and methods should be controlled through well-defined interfaces.
+Inheritance is a mechanism in OOP that allows a subclass to inherit properties and behaviors from its superclass. However, modifying the behavior of superclass methods in a subclass breaks encapsulation because it exposes and changes the internal implementation details of the superclass to the outside world.
+This violates the principle of encapsulation because it allows the subclass to directly manipulate or override the behavior of the superclass methods without adhering to the defined interfaces or contracts.
+Encapsulation promotes code maintainability, reliability, and flexibility by providing a clear separation between the internal implementation of a class and its external interface. Modifying superclass behavior in a subclass undermines this separation and can lead to tightly coupled and fragile code.
+
